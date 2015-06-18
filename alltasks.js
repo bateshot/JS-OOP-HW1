@@ -18,6 +18,7 @@ function validFloat(x){
 
 function sumArray(arr) {
 	// Empty input check
+	if (!Array.isArray(arr)) throw 'not an array!';
 	if (arr == undefined) throw 'Input not provided!';
 	if (arr.length == 0) return null;
 	
@@ -30,7 +31,7 @@ function sumArray(arr) {
 }
 
 
-var test = [1, 2, 3, 4, 6];
+var test = [3, 4, 5];
 console.log(sumArray(test));
 
 // VERSION FOR The AUTO TESING SYSTEM
@@ -44,6 +45,7 @@ console.log(sumArray(test));
 // 					return parseFloat(x);
 // 				}
 // 				// Empty input check
+				// if (!Array.isArray(arr)) throw 'not an array!';
 // 				if (arr == undefined) throw 'Input not provided!';
 // 				if (arr.length == 0) return null;
 				
